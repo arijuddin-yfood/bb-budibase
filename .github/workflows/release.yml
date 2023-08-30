@@ -19,3 +19,14 @@ jobs:
           echo "RELEASE_VERSION=$release_version" >> $GITHUB_ENV
           npm install
           npm run build
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ./path/to/release/file1
+            ./path/to/release/file2
+          tag_name: v1.2_6.4.2-free  # Corrected input: tag_name
+          release_name: v1.2_6.4.2-free
