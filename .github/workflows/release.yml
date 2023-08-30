@@ -21,6 +21,8 @@ jobs:
           npm run build
       - name: Perform Github Release
         uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: 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
         with:
           name: v1.2_6.4.2-free
           tag_name: v1.2_6.4.2-free
