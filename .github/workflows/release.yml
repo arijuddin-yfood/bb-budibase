@@ -28,19 +28,19 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           files: |
             ./path/to/release/file1
             ./path/to/release/file2
-          tag_name: ${{ github.sha }}  # Corrected input: tag_name
-          release_name: Release ${{ github.sha }}
+          tag_name: remove-realese-file  # Corrected input: tag_name
+          release_name: Release remove-realese-file
 
       - name: Upload release assets
         id: upload-assets
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./path/to/release/file1
