@@ -28,7 +28,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
           files: |
             ./path/to/release/file1
@@ -40,7 +40,7 @@ jobs:
         id: upload-assets
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./path/to/release/file1
