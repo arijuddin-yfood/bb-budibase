@@ -22,7 +22,7 @@ jobs:
       - name: Perform Github Release
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           name: v1.2_6.4.2-free
           tag_name: v1.2_6.4.2-free
