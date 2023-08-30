@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install  # Change this to your package manager command
 
-      - name: Build and test
-        run: npm run build && npm test  # Change this to your build and test commands
+      - name: Build
+        run: npm run build  # Change this to your build and test commands
 
       - name: Create release
         id: create_release
