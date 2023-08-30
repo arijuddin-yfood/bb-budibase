@@ -22,7 +22,7 @@ jobs:
       - name: Perform Github Release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           name: v1.2_6.4.2-free
           tag_name: v1.2_6.4.2-free
