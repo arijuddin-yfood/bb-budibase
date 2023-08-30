@@ -20,7 +20,7 @@ jobs:
           npm install
           npm run build
       - name: Perform Github Release
-        uses: softprops/action-gh-release@v1
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: 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
         with:
